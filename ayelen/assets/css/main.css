@@ -27,6 +27,7 @@ img{
 .title{
 	text-transform: capitalize; /*todos los titulos van a tener la primera letra en maayuscula*/
 	text-align: center;
+	color: #450B45;
 }
 
 .container{
@@ -58,6 +59,7 @@ img{
 td{
 	display: block;/*se acomoda una abajo de la otra*/
 	width: 100%;
+	color: #450B45;
 }
 td:nth-of-type(1){/*selecciono uno de los elementos*/
 	font-size: 1em;
@@ -66,6 +68,7 @@ td:nth-of-type(1){/*selecciono uno de los elementos*/
 }
 th{
 	display: none;
+	color: #450B45;
 }
 .actions{
 	position: absolute;
@@ -89,7 +92,8 @@ th{
 .paragraph{
     line-height: 1.8em;
     font-weight: 200;
-    right: 0px;
+	right: 0px;
+	color: #450B45;
 }
 .fa-star{
 	color:#F7F17B;
@@ -113,6 +117,7 @@ th{
 	border-bottom: solid 2px #93748A;
 	padding: 10px/*1em 1.5em 1.8em 2em*/;
 	padding-bottom: 1em;
+	color: #450B45;
 }
 .main-image{
 	width: 250px;
