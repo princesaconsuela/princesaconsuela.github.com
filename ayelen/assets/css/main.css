@@ -1,0 +1,148 @@
+/*
+colors
+  verdefluo: #81E4DA
+  verdeagua:#81E4DA;
+  violeta: A18DDD;
+  celesteviejo: AECFDF;
+  lilatexto:93748A;
+#a770ef
+
+*/
+html{
+	font-family: 'Roboto Mono', monospace;
+
+}
+
+a{
+	text-decoration: none;/*le saco el subrayado al link*/
+	color: #A18DDD;
+}
+a:hover{/*cuando el cursor pase por arriba de los links estos cambien de color o algo asi*/
+    opacity: 0.8;
+}
+img{
+	max-width: 100%;
+}
+
+.title{
+	text-transform: capitalize; /*todos los titulos van a tener la primera letra en maayuscula*/
+	text-align: center;
+}
+
+.container{
+	 background:#A18DDD;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     height: 100vh;/*con esta indiciacion, vh, ocupa la totalidad de la pantalla*/
+     display: flex;/*para centrar y alinear los elementos*/
+     align-items: center;
+	 justify-content: center;
+	
+}
+.content{
+	max-width:960px;
+	width: 100%;
+	height: 80vh;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 3px 6px 10px #81E4DA;
+	position: relative;
+	padding: 1.8em;/*el espacio por dentro de mi contenido, es decir, no va a estar tan pegado a los bordes*/
+	overflow-y: scroll;/*barritas*/
+	overflow-x: hidden;
+
+}
+.content{
+	padding:1em;
+}
+td{
+	display: block;/*se acomoda una abajo de la otra*/
+	width: 100%;
+}
+td:nth-of-type(1){/*selecciono uno de los elementos*/
+	font-size: 1em;
+	font-weight: bold;
+	color: #81E4DA;
+}
+th{
+	display: none;
+}
+.actions{
+	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+.close{
+	height: 30px;
+	width: 30px;
+	color:  #A18DDD;
+	border-radius: 50%;
+	background-color: #93748A;
+	display: inline-block;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	font-weight:300;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 200;
+    right: 0px;
+}
+.fa-star{
+	color:#F7F17B;
+}
+.table{
+	width: 100%;
+	border-spacing:0;/*las tablas por defecto tienen un espacion entre casilleros, con esta indicaciones se lo saco*/
+}
+.table td, .table th{/*este es el cuerpo de la tabla*/
+     padding: 1em; /*relleno de los casilleros*/
+     text-align: left;
+}
+.table tr:nth-child(even){
+     background-color: #CDB4D7;
+}
+.title-item{
+	/*border-bottom-style: solid;
+	border-width: 2px;
+	border-color: #c6426e;
+	padding-bottom: 1em;*/
+	border-bottom: solid 2px #93748A;
+	padding: 10px/*1em 1.5em 1.8em 2em*/;
+	padding-bottom: 1em;
+}
+.main-image{
+	width: 250px;
+	height: 400px;
+	float: left;
+	margin-right: 1em;
+}
+@media (min-width: 900px){
+	th{
+		display: table-cell;
+	}
+	td{
+		width: auto;
+		display: table-cell;
+	}
+
+	td:nth-of-type(1){/*pseudo clase, para elegir un elemento especifico de la tabla*/
+		font-size: 1em;
+		font-weight: bold;
+		color:#81E4DA;
+	}
+	.content{
+		padding: 1.8em;
+	}
+}
+
+
+
+@media (min-height:550px){/*indicaciones para pantallas que midan al menos 550px*/
+    .content{
+    	height: 500px;
+    }
+}
