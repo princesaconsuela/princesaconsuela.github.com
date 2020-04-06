@@ -125,6 +125,13 @@ th{
 	float: left;
 	margin-right: 1em;
 }
+footer{
+	background-color: aliceblue;
+	font-size: 'Roboto Mono', monospace;
+	color: #93748A ;
+	text-align: center;
+	padding: 1em 0 1em 0;
+}
 @media (min-width: 900px){
 	th{
 		display: table-cell;
